@@ -18,7 +18,7 @@ future.
 Async in Rust uses a `Poll` based approach, in which an asynchronous task will
 have three phases.
 
-1. **The Poll phase.** A Future is polled which results in the task progressing until
+1. **The Poll phase.** A Future is polled, which results in the task progressing until
 a point where it can no longer make progress. We often refer to the part of the
 runtime which polls a Future as an executor.
 2. **The Wait phase.** An event source, most often referred to as a reactor,
